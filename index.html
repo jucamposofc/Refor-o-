@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profª Roseane Mendes | Centro de Estudo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Profª Roseane Mendes</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#disciplinas">Disciplinas</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato" class="btn-small">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-inter">
+        <div class="container hero-content">
+            <h1 class="reveal">O resultado é o seu futuro!</h1>
+            <p class="reveal">Centro de Estudo com foco em alto desempenho escolar.</p>
+            <a href="#contato" class="btn-cta">Agendar Avaliação Gratuita</a>
+        </div>
+    </section>
+
+    <section id="disciplinas" class="subjects-section">
+        <div class="container">
+            <h2 class="section-title">Nossas Disciplinas</h2>
+            <div class="subjects-grid">
+                <div class="subject-card reveal">Português</div>
+                <div class="subject-card reveal">Matemática</div>
+                <div class="subject-card reveal">Física</div>
+                <div class="subject-card reveal">Química</div>
+                <div class="subject-card reveal">Desenho Geométrico</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Nossa Estrutura</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="sala1.jpg" alt="Sala de aula"></div>
+                    <div class="swiper-slide"><img src="sala2.jpg" alt="Área de estudo"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        ScrollReveal().reveal('.reveal', { delay: 300, distance: '50px', origin: 'bottom' });
+        var swiper = new Swiper(".mySwiper", { pagination: { el: ".swiper-pagination" } });
+    </script>
+</body>
+</html>
