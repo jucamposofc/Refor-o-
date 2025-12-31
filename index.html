@@ -6,19 +6,18 @@
     <title>Profª Roseane Mendes | Centro de Estudo</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Profª Roseane Mendes</div>
+            <div class="logo"><strong>Profª Roseane Mendes</strong></div>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#disciplinas">Disciplinas</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato" class="btn-small">Contato</a>
-                </li>
+                <li><a href="#galeria">Estrutura</a></li>
+                <li><a href="#contato" class="btn-nav">Falar com Consultor</a></li>
             </ul>
         </div>
     </nav>
@@ -26,17 +25,28 @@
     <section class="hero-inter">
         <div class="container hero-content">
             <h1 class="reveal">O resultado é o seu futuro!</h1>
-            <p class="reveal">Centro de Estudo com foco em alto desempenho escolar.</p>
-           <!-- <a href="#contato" class="btn-cta">Agendar Avaliação Gratuita</a> -->
-            <a href="https://wa.me/5598996054892" class="btn-cta">Quero Agendar Avaliação Gratuita</a>
-
-            
+            <p class="reveal">Acompanhamento pedagógico especializado no coração do São Francisco.</p>
+            <a href="https://wa.me/5598996054892?text=Olá!%20Vi%20o%20site%20e%20quero%20agendar%20uma%20avaliação." 
+               target="_blank" class="btn-cta reveal">Quero Agendar Avaliação Gratuita</a>
         </div>
     </section>
 
-    <section id="disciplinas" class="subjects-section">
+    <section id="sobre" class="section-padding">
+        <div class="container about-grid">
+            <div class="about-text reveal">
+                <h2 class="section-title">Sobre o Centro de Estudo</h2>
+                <p>O **Centro de Estudo Profª Roseane Mendes** é referência em São Luís por seu compromisso com a excelência acadêmica. Nossa missão é oferecer suporte personalizado para alunos do Ensino Fundamental e Médio, transformando dificuldades em resultados reais.</p>
+                <p>Com uma metodologia focada no aluno, preparamos jovens para os desafios escolares e vestibulares com dedicação e experiência.</p>
+            </div>
+            <div class="about-image reveal">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80" alt="Professora ensinando">
+            </div>
+        </div>
+    </section>
+
+    <section id="disciplinas" class="section-padding bg-light">
         <div class="container">
-            <h2 class="section-title">Nossas Disciplinas</h2>
+            <h2 class="section-title text-center">Nossas Disciplinas</h2>
             <div class="subjects-grid">
                 <div class="subject-card reveal">Português</div>
                 <div class="subject-card reveal">Matemática</div>
@@ -47,15 +57,34 @@
         </div>
     </section>
 
-    <section id="galeria" class="gallery-section">
+    <section id="galeria" class="section-padding">
         <div class="container">
-            <h2 class="section-title">Nossa Estrutura</h2>
-            <div class="swiper mySwiper">
+            <h2 class="section-title text-center">Nossa Estrutura</h2>
+            <div class="swiper mySwiper reveal">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="sala1.jpg" alt="Sala de aula"></div>
-                    <div class="swiper-slide"><img src="sala2.jpg" alt="Área de estudo"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80" alt="Sala de Aula"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80" alt="Biblioteca"></div>
+                    <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80" alt="Estudo em Grupo"></div>
                 </div>
                 <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding bg-dark">
+        <div class="container contact-grid">
+            <div class="contact-info reveal">
+                <h2 class="section-title text-white">Fale Conosco</h2>
+                <p class="text-white">📍 Rua Agenor Vieira, 69, Ed. Catarina Rosa. Loja 03 - São Francisco</p>
+                <p class="text-white">📞 (98) 3190-1359</p>
+                <p class="text-white">📱 (98) 99605-4892</p>
+                <p class="text-white">✉️ roseane.mendes@hotmail.com</p>
+                <a href="https://wa.me/5598996054892" class="btn-cta mt-20">Conversar no WhatsApp</a>
+            </div>
+            <div class="contact-map reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.1!2d-44.29!3d-2.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMzAnMDAuMCJTIDQ0wrAxNycwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v123456789" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -63,8 +92,16 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        ScrollReveal().reveal('.reveal', { delay: 300, distance: '50px', origin: 'bottom' });
-        var swiper = new Swiper(".mySwiper", { pagination: { el: ".swiper-pagination" } });
+        // Animação de Scroll
+        ScrollReveal().reveal('.reveal', { delay: 200, distance: '40px', origin: 'bottom', duration: 1000 });
+        
+        // Inicialização do Carrossel (Galeria)
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+        });
     </script>
 </body>
 </html>
+
